@@ -21,9 +21,42 @@
             <button class="btn-gold btn-lg px-5 py-3" onclick="goTo('page-step1')">
                 Empezemos! &nbsp; <i class="bi bi-arrow-right"></i>
             </button>
+            <p class="mt-4 text-muted" style="font-size: .8rem">Proyecto escolar para Tecnologías Web · UAA · ISC 6to Semestre</p>
         </div>
-
-
     </div>
+
+
+    <!-- aqui carga el paso a paso a seguir para el intermcabio -->
+    <div class="main-container py-4 px-3 d-flex flex-column align-items-center" id="steps-wrapper" style="min-height:100vh">
+        <div id="progress-bar" class="step-bar d-flex mb-4 align-items-center" style="display:none!important">
+            <div class="step-dot" id="dot-1"></div>
+            <div class="step-dot" id="dot-2"></div>
+            <div class="step-dot" id="dot-3"></div>
+            <div class="step-dot" id="dot-4"></div>
+            <div class="step-dot" id="dot-5"></div>
+            <div class="step-dot" id="dot-6"></div>
+            <div class="step-dot" id="dot-7"></div>
+        </div>
+    </div>
+
+    <div id="page-step1" class="page step-section w-100" style="max-width:540px">
+        <div class="card-glass p-4">
+            <div class="text-center mb-3" style="font-size:2.5rem">Paso 1</div>
+            <h2 class="section-title text-gold">Quien organiza?</h2>
+            <input id="organizer-name" type="text" class="form-control-dark w-100 mb-3" placeholder="Tu nombre..." />
+            <label class="custom-check mt-2">
+                <input type="checkbox" id="include-organizer" checked />
+                <span>Incluirme en el intercambio</span>
+            </label>
+            <div class="nav-btns mt-4">
+                <button class="btn-gold ms-auto" onclick="saveStep1()">Siguiente paso</button>
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/storage.js"></script>
+
 </body>
 </html>
